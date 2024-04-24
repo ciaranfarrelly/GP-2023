@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://cr5x7eiaetwrj"]
+[gd_scene load_steps=3 format=3 uid="uid://cr5x7eiaetwrj"]
+
+[ext_resource type="Script" path="res://Sound1.gd" id="1_q63s2"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_17bdl"]
 
@@ -10,3 +12,14 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Sound1" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Sound1"
+script = ExtResource("1_q63s2")
+
+[node name="Sound1" type="AudioStreamPlayer" parent="Sound1"]
+
+[connection signal="pressed" from="Sound1" to="Sound1" method="_on_pressed"]
