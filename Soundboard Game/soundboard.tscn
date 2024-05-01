@@ -1,10 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://cr5x7eiaetwrj"]
+[gd_scene load_steps=13 format=3 uid="uid://cr5x7eiaetwrj"]
 
 [ext_resource type="Script" path="res://Sound1.gd" id="1_q63s2"]
+[ext_resource type="AudioStream" uid="uid://dqcoat4hghpgy" path="res://audio/nuh uh.mp3" id="2_jev81"]
+[ext_resource type="AudioStream" uid="uid://vnkpwenkrsx3" path="res://audio/zorp.wav" id="3_o31me"]
+[ext_resource type="AudioStream" uid="uid://bnhcee8fqph0l" path="res://audio/spooky.wav" id="4_5mak8"]
+[ext_resource type="AudioStream" uid="uid://w4nyjva71bem" path="res://audio/cry.wav" id="5_1rwav"]
+[ext_resource type="AudioStream" uid="uid://bg1g2cvdd6sp6" path="res://audio/732597__spldr0984__rargh.wav" id="6_mn4xe"]
+[ext_resource type="AudioStream" uid="uid://cqwymoa7u0din" path="res://audio/670200__0alexis0__iphone-photo-trigger.wav" id="7_ahfn1"]
+[ext_resource type="AudioStream" uid="uid://bgj6vh4pepxsn" path="res://audio/37239__shades__laugh-child.wav" id="8_sutcu"]
+[ext_resource type="AudioStream" uid="uid://b6pcjcrln4jlt" path="res://audio/47252__deleted_user_364925__bad-explosion.wav" id="9_fmtgm"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_17bdl"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_854hr"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_s7x6e"]
 
 [node name="Control" type="Control"]
 material = SubResource("CanvasItemMaterial_17bdl")
@@ -44,18 +54,243 @@ offset_top = 12.1072
 offset_right = 141.224
 offset_bottom = 43.1072
 scale = Vector2(0.3, 1.2)
+icon = SubResource("ImageTexture_s7x6e")
 script = ExtResource("1_q63s2")
 
 [node name="Sound1" type="AudioStreamPlayer" parent="Panel/ColorRect/Panel/Sound1"]
+stream = ExtResource("2_jev81")
 
 [node name="Label" type="Label" parent="Panel/ColorRect/Panel"]
 layout_mode = 0
-offset_left = 14.9399
+offset_left = 15.0
+offset_top = 18.0
+offset_right = 64.0
+offset_bottom = 41.0
+text = "No
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="Panel/ColorRect"]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 185.0
+offset_right = 144.0
+offset_bottom = 246.0
+scale = Vector2(3.81529, 2.06488)
+
+[node name="Sound1" type="Button" parent="Panel/ColorRect/Panel2"]
+layout_mode = 0
+offset_left = 75.2236
+offset_top = 12.1072
+offset_right = 141.224
+offset_bottom = 43.1072
+scale = Vector2(0.3, 1.2)
+script = ExtResource("1_q63s2")
+
+[node name="Sound1" type="AudioStreamPlayer" parent="Panel/ColorRect/Panel2/Sound1"]
+stream = ExtResource("3_o31me")
+
+[node name="Label" type="Label" parent="Panel/ColorRect/Panel2"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 18.0
+offset_right = 64.0
+offset_bottom = 41.0
+text = "Alien
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel3" type="Panel" parent="Panel/ColorRect"]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 345.0
+offset_right = 145.0
+offset_bottom = 406.0
+scale = Vector2(3.81529, 2.06488)
+
+[node name="Sound1" type="Button" parent="Panel/ColorRect/Panel3"]
+layout_mode = 0
+offset_left = 75.2236
+offset_top = 12.1072
+offset_right = 141.224
+offset_bottom = 43.1072
+scale = Vector2(0.3, 1.2)
+script = ExtResource("1_q63s2")
+
+[node name="Sound1" type="AudioStreamPlayer" parent="Panel/ColorRect/Panel3/Sound1"]
+stream = ExtResource("4_5mak8")
+
+[node name="Label" type="Label" parent="Panel/ColorRect/Panel3"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 18.0
+offset_right = 64.0
+offset_bottom = 41.0
+text = "Ghost
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel4" type="Panel" parent="Panel/ColorRect"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 499.0
+offset_right = 146.0
+offset_bottom = 560.0
+scale = Vector2(3.81529, 2.06488)
+
+[node name="Sound1" type="Button" parent="Panel/ColorRect/Panel4"]
+layout_mode = 0
+offset_left = 75.2236
+offset_top = 12.1072
+offset_right = 141.224
+offset_bottom = 43.1072
+scale = Vector2(0.3, 1.2)
+script = ExtResource("1_q63s2")
+
+[node name="Sound1" type="AudioStreamPlayer" parent="Panel/ColorRect/Panel4/Sound1"]
+stream = ExtResource("5_1rwav")
+
+[node name="Label" type="Label" parent="Panel/ColorRect/Panel4"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 18.0
+offset_right = 64.0
+offset_bottom = 41.0
+text = "Crying
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel5" type="Panel" parent="Panel/ColorRect"]
+layout_mode = 0
+offset_left = 608.0
+offset_top = 30.0
+offset_right = 708.0
+offset_bottom = 91.0
+scale = Vector2(3.81529, 2.06488)
+
+[node name="Sound1" type="Button" parent="Panel/ColorRect/Panel5"]
+layout_mode = 0
+offset_left = 75.2236
+offset_top = 12.1072
+offset_right = 141.224
+offset_bottom = 43.1072
+scale = Vector2(0.3, 1.2)
+script = ExtResource("1_q63s2")
+
+[node name="Sound1" type="AudioStreamPlayer" parent="Panel/ColorRect/Panel5/Sound1"]
+stream = ExtResource("6_mn4xe")
+
+[node name="Label" type="Label" parent="Panel/ColorRect/Panel5"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 18.0
+offset_right = 64.0
+offset_bottom = 41.0
+text = "Rargh
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel6" type="Panel" parent="Panel/ColorRect"]
+layout_mode = 0
+offset_left = 609.0
+offset_top = 184.0
+offset_right = 709.0
+offset_bottom = 245.0
+scale = Vector2(3.81529, 2.06488)
+
+[node name="Sound1" type="Button" parent="Panel/ColorRect/Panel6"]
+layout_mode = 0
+offset_left = 75.2236
+offset_top = 12.1072
+offset_right = 141.224
+offset_bottom = 43.1072
+scale = Vector2(0.3, 1.2)
+script = ExtResource("1_q63s2")
+
+[node name="Sound1" type="AudioStreamPlayer" parent="Panel/ColorRect/Panel6/Sound1"]
+stream = ExtResource("7_ahfn1")
+
+[node name="Label" type="Label" parent="Panel/ColorRect/Panel6"]
+layout_mode = 0
+offset_left = 7.0768
+offset_top = 17.4344
+offset_right = 68.0768
+offset_bottom = 40.4344
+text = "Camera"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel7" type="Panel" parent="Panel/ColorRect"]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 344.0
+offset_right = 710.0
+offset_bottom = 405.0
+scale = Vector2(3.81529, 2.06488)
+
+[node name="Sound1" type="Button" parent="Panel/ColorRect/Panel7"]
+layout_mode = 0
+offset_left = 75.2236
+offset_top = 12.1072
+offset_right = 141.224
+offset_bottom = 43.1072
+scale = Vector2(0.3, 1.2)
+script = ExtResource("1_q63s2")
+
+[node name="Sound1" type="AudioStreamPlayer" parent="Panel/ColorRect/Panel7/Sound1"]
+stream = ExtResource("8_sutcu")
+
+[node name="Label" type="Label" parent="Panel/ColorRect/Panel7"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 18.0
+offset_right = 64.0
+offset_bottom = 41.0
+text = "Laugh
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel8" type="Panel" parent="Panel/ColorRect"]
+layout_mode = 0
+offset_left = 611.0
+offset_top = 498.0
+offset_right = 711.0
+offset_bottom = 559.0
+scale = Vector2(3.81529, 2.06488)
+
+[node name="Sound1" type="Button" parent="Panel/ColorRect/Panel8"]
+layout_mode = 0
+offset_left = 75.2236
+offset_top = 12.1072
+offset_right = 141.224
+offset_bottom = 43.1072
+scale = Vector2(0.3, 1.2)
+script = ExtResource("1_q63s2")
+
+[node name="Sound1" type="AudioStreamPlayer" parent="Panel/ColorRect/Panel8/Sound1"]
+stream = ExtResource("9_fmtgm")
+
+[node name="Label" type="Label" parent="Panel/ColorRect/Panel8"]
+layout_mode = 0
+offset_left = 6.55259
 offset_top = 18.8873
-offset_right = 63.9399
+offset_right = 71.5526
 offset_bottom = 41.8873
-text = "Sound"
+text = "Kaboom"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="pressed" from="Panel/ColorRect/Panel/Sound1" to="Panel/ColorRect/Panel/Sound1" method="_on_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/Panel2/Sound1" to="Panel/ColorRect/Panel2/Sound1" method="_on_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/Panel3/Sound1" to="Panel/ColorRect/Panel3/Sound1" method="_on_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/Panel4/Sound1" to="Panel/ColorRect/Panel4/Sound1" method="_on_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/Panel5/Sound1" to="Panel/ColorRect/Panel5/Sound1" method="_on_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/Panel6/Sound1" to="Panel/ColorRect/Panel6/Sound1" method="_on_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/Panel7/Sound1" to="Panel/ColorRect/Panel7/Sound1" method="_on_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/Panel8/Sound1" to="Panel/ColorRect/Panel8/Sound1" method="_on_pressed"]
